@@ -204,3 +204,12 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-08-02 17:31:58 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
