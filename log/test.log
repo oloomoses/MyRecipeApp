@@ -1,0 +1,1828 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "chefs"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (129.7ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "chefname" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (110.5ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "summary" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (110.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (109.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200803171746)[0m
+  [1m[35m (110.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200803165515);
+
+[0m
+  [1m[35m (134.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-08-03 18:02:21.899464"], ["updated_at", "2020-08-03 18:02:21.899464"]]
+  [1m[35m (78.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "chefs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (143.6ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "chefname" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (132.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "summary" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "chef_id" integer)[0m
+  [1m[35m (144.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (103.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200804172949)[0m
+  [1m[35m (99.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200803165515),
+(20200803171746);
+
+[0m
+  [1m[35m (106.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-08-05 13:39:58.975684"], ["updated_at", "2020-08-05 13:39:58.975684"]]
+  [1m[35m (85.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-05 13:39:59.254634"], ["updated_at", "2020-08-05 13:39:59.254634"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[35m (1.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-05 13:44:04.515466"], ["updated_at", "2020-08-05 13:44:04.515466"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+ChefTest: test_email_must_be_valid
+----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ChefTest: test_email_must_be_present
+------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-05 13:58:41.857576"], ["updated_at", "2020-08-05 13:58:41.857576"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (22.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 18:53:45.717417"], ["updated_at", "2020-08-07 18:53:45.717417"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 18:55:32.882251"], ["updated_at", "2020-08-07 18:55:32.882251"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 18:57:12.739843"], ["updated_at", "2020-08-07 18:57:12.739843"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 18:59:31.792493"], ["updated_at", "2020-08-07 18:59:31.792493"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 19:10:24.901101"], ["updated_at", "2020-08-07 19:10:24.901101"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 19:11:12.087543"], ["updated_at", "2020-08-07 19:11:12.087543"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+RecipeTest: test_description_must_not_be_too_short
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+RecipeTest: test_summary_must_not_be_too_short
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+RecipeTest: test_summary_must_not_be_too_long
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RecipeTest: test_summary_must_be_present
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+RecipeTest: test_name_must_not_be_too_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RecipeTest: test_description_must_be_present
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+RecipeTest: test_description_must_not_be_too_long
+-------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+RecipeTest: test_name_must_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+RecipeTest: test_name_must_not_be_too_short
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+ChefTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@eee.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "R_TDD-DS@eee.hello.org"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "first.last@eem.au"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "laura+joe@monk.cm"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ChefTest: test_name_must_not_be_too_short
+-----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_name_must_not_be_too_long
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ChefTest: test_Chef_name_must_be_present
+----------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+ChefTest: test_chef_should_be_valid
+-----------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "oloo@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "oloo"], ["email", "oloo@example.com"], ["created_at", "2020-08-07 19:14:32.464411"], ["updated_at", "2020-08-07 19:14:32.464411"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "OLOO@EXAMPLE.COM"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------
+ChefTest: test_email_validation_should_reject_invalid_addresses
+---------------------------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@example.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "@first@first.com"], ["LIMIT", 1]]
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
