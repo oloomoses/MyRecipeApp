@@ -1,5 +1,18 @@
 <h1 class = 'text-center'>New Recipe</h1><hr/>
 
+<% if @recipe.errors.any? %>
+  <div class = 'row'>
+    <div class = 'col-md-8 col-md-offset-2 alert alert-danger'>
+      <h4>Correct the following Errors!</h4>
+      <% @recipe.errors.full_messages.each do |msg| %>
+        <ul>
+          <li><%= msg %></li>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
 <div class = 'row'>
   <div class = 'col-md-8 col-md-offset-2 well'>
     <%= form_for @recipe do |f| %>
