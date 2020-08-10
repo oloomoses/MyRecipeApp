@@ -1,0 +1,18 @@
+<h1><%= @recipe.name %></h1>
+<div class = 'row'>
+  <div class = 'col-md-3 pull-right center'>
+    <h3>Recipe Prepared by: <strong><%= @recipe.chef.chefname %></strong></h3>
+  </div>
+
+  <div class = 'col-md-9 well'>
+    <h3><%= @recipe.summary %></h3>
+    <p>
+      <strong>Steps</strong>
+    </p>
+    <%= @recipe.description %>
+  </div>
+</div>
+
+<%= link_to 'Edit Recipe', '#', class: 'btn btn-warning' %>
+<%= link_to 'All Recipes', recipes_path, class: 'btn btn-success' %>
+<%= link_to 'Delete Recipe', '#', class: 'btn btn-danger'%>
