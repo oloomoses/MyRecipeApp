@@ -3252,3 +3252,440 @@ Processing by RecipesController#show as HTML
 Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/recipes/3/edit" for ::1 at 2020-08-11 01:34:29 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/recipes/3" for ::1 at 2020-08-11 01:34:40 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T6PwiBUQjPzvID7LqWxavz4tfihu1Fla2Rh/lG+3imVbTah0ixPoWNgrqsFUlhWXcTgsB8B3HTGJSml3F5Lo0Q==", "recipe"=>{"name"=>"Updated - Rails with active models", "summary"=>"This is a practical exercise to build rails models and association", "description"=>"1. Create a new rails app\r\n2. Run rails server to check that everything is well\r\n3. On your terminal run, rails generate migration users"}, "commit"=>"Update Recipe", "id"=>"3"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 49.7ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/recipes/3" for ::1 at 2020-08-11 01:34:56 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5tpavA9okR9m2RtSmKk7yH5irGJXE+4nGaJ15wVSC76MPlFRK2mz657iLWdAVBQlYHC93jwnYYdGboEN5lLp8w==", "recipe"=>{"name"=>"Updated - Rails with", "summary"=>"This is a practical exercise to build rails models and association", "description"=>"1. Create a new rails app\r\n2. Run rails server to check that everything is well\r\n3. On your terminal run, rails generate migration users"}, "commit"=>"Update Recipe", "id"=>"3"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mRecipe Update (0.3ms)[0m  [1m[33mUPDATE "recipes" SET "name" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["name", "Updated - Rails with"], ["updated_at", "2020-08-10 22:34:56.488578"], ["id", 3]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[35m (215.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+Redirected to http://localhost:3000/recipes/3
+Completed 302 Found in 223ms (ActiveRecord: 215.8ms)
+
+
+Started GET "/recipes/3" for ::1 at 2020-08-11 01:34:56 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/3/edit" for ::1 at 2020-08-11 01:35:03 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/recipes/3" for ::1 at 2020-08-11 01:35:14 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wSYp4pysiO6S/8Z0bbs2wFA+ZeOnGLee2AfIQGemtSbVyHEeAq/sSqX0Un6QQXnoHys3zAm78/WIVd6jH4PXkg==", "recipe"=>{"name"=>"Rails with active models", "summary"=>"This is a practical exercise to build rails models and association", "description"=>"1. Create a new rails app\r\n2. Run rails server to check that everything is well\r\n3. On your terminal run, rails generate migration users"}, "commit"=>"Update Recipe", "id"=>"3"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mRecipe Update (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "name" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["name", "Rails with active models"], ["updated_at", "2020-08-10 22:35:14.221875"], ["id", 3]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[35m (204.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+Redirected to http://localhost:3000/recipes/3
+Completed 302 Found in 216ms (ActiveRecord: 205.8ms)
+
+
+Started GET "/recipes/3" for ::1 at 2020-08-11 01:35:14 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/3" for ::1 at 2020-08-11 01:39:54 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-11 01:39:58 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  Rendered recipes/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-11 01:40:00 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-14 18:58:34 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 601ms (Views: 571.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-14 19:05:24 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-14 19:05:26 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  Rendered recipes/index.html.erb within layouts/application (86.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 179ms (Views: 136.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-14 19:05:33 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/4/edit" for ::1 at 2020-08-14 19:05:39 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (230.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 283ms (Views: 281.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-14 19:05:49 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  Rendered recipes/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:05:54 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (':form' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <% render :form %>
+  
+app/views/recipes/new.html.erb:1:in `_app_views_recipes_new_html_erb___1741761084093061474_17120'
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:09:42 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (':form' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <%= render :form %>
+  
+app/views/recipes/new.html.erb:1:in `_app_views_recipes_new_html_erb___1741761084093061474_17640'
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:09:54 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (3.0ms)
+  Rendered recipes/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:10:46 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (2.2ms)
+  Rendered recipes/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-14 19:11:51 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-14 19:11:53 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  Rendered recipes/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/2" for ::1 at 2020-08-14 19:11:54 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:4
+  Rendered recipes/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2020-08-14 19:11:56 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (2.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:12:10 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (2.6ms)
+  Rendered recipes/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-14 19:12:25 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (2.7ms)
+  Rendered recipes/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2020-08-14 19:16:03 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (0.8ms)
+  Rendered recipes/edit.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/recipes/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+...ate Recipe' : 'Update Recipe'), class: 'btn btn-success' );@...
+...                              ^
+):
+  
+app/views/recipes/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/recipes/edit.html.erb:3:in `_app_views_recipes_edit_html_erb__1795010155384892471_19380'
+Started GET "/recipes/2/edit" for ::1 at 2020-08-14 19:17:26 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (5.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2020-08-14 19:26:37 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered recipes/_form.html.erb (4.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2020-08-14 19:26:48 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YNwTPU80V22Nbwu8m4JrAvBEOr0Mh/UUQyixCErH+HWR9hkPzHEON3FJZNzUXZu/YoD1umoN5hc5zFhHaxKPpw==", "recipe"=>{"name"=>"", "summary"=>"Cooking the brown soft chapo from home", "description"=>"boil water with salt and sugar, add the boiled water to flour, mix, add oil, cover to make soft, fry in a pan"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:33
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.1ms)
+  Rendered recipes/_form.html.erb (4.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+

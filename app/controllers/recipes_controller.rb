@@ -30,7 +30,7 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
 
-    if @recipe.update(params.require(:recipe).permit(:name, :summary, :description))
+    if @recipe.update(recipe_params)
       flash[:success] = 'Recipe update!'
       redirect_to recipe_path(@recipe)
     else
