@@ -1,4 +1,9 @@
 <h1><%= @recipe.name %></h1>
+
+<div class = 'recipe_picture'>
+  <%= image_tag(@recipe.picture.url, class: 'gravatar') if @recipe.picture? %>
+</div>
+
 <div class = 'row'>
   <div class = 'col-md-3 pull-right center'>
     <h3>Recipe Prepared by: <strong><%= @recipe.chef.chefname %></strong></h3>
