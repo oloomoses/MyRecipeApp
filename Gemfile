@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'carrierwave', '~> 2.1'
+gem 'will_paginate', '~> 3.3'
+gem 'bootstrap-will_paginate', '~> 1.0'
 
 group :development, :test do
   gem 'sqlite3'

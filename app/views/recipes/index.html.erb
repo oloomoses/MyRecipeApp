@@ -1,5 +1,7 @@
 <h1>All Recipes</h1>
 
+<%= will_paginate %>
+
 <% @recipes.each do |recipe| %>
   <div class = 'row'>
     <div class = 'col-md-2'>
@@ -14,7 +16,9 @@
 
       <p>
         <span class = 'quiet'>
-          <small><%= time_ago_in_words(recipe.created_at) %> ago</small>
+          <strong>Create:</strong> <small><%= time_ago_in_words(recipe.created_at) %> ago</small>,
+          &nbsp&nbsp&nbsp
+          <strong>Updated:</strong> <small><%= time_ago_in_words(recipe.updated_at) %> ago</small>
         </span>
       </p>
 
@@ -29,3 +33,5 @@
   </div> 
 
 <% end %>
+
+<%= will_paginate %>
