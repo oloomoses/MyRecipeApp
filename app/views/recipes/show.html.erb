@@ -15,6 +15,9 @@
       <strong>Steps</strong>
     </p>
     <%= simple_format(@recipe.description) %>
+
+    <%= render 'likes', obj: @recipe %>
+
   </div>
 </div>
 
