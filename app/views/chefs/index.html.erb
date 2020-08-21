@@ -1,0 +1,9 @@
+<h2>All Chefs</h2>
+
+<% @chefs.each do |chef| %>
+  <h3><%= chef.chefname %></h3>
+  <%= chef.email %><br>
+  <%= link_to 'View Chef', chef_path(chef) %>
+  <hr>
+<% end %>
+

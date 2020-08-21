@@ -6828,3 +6828,1509 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 1.7ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+Migrating to AddPasswordDigestToChefs (20200820204659)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200820204659"]]
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (98.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+Migrating to AddPasswordDigestToChefs (20200820204659)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+Migrating to AddPasswordDigestToChefs (20200820204659)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "achefs" ("id" integer NOT NULL PRIMARY KEY, "chefname" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "achefs" ("id","chefname","email","created_at","updated_at")
+                     SELECT "id","chefname","email","created_at","updated_at" FROM "chefs"[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "chefs"[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" integer NOT NULL PRIMARY KEY, "chefname" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "chefs" ("id","chefname","email","created_at","updated_at")
+                     SELECT "id","chefname","email","created_at","updated_at" FROM "achefs"[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "achefs"[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200820204659"]]
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (100.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToChefs (20200820204659)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "chefs" ADD "password_digest" varchar[0m
+  ↳ db/migrate/20200820204659_add_password_digest_to_chefs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200820204659"]]
+  ↳ bin/rails:9
+  [1m[35m (82.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mChef Load (1.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mChef Update (0.3ms)[0m  [1m[33mUPDATE "chefs" SET "updated_at" = ?, "password_digest" = ? WHERE "chefs"."id" = ?[0m  [["updated_at", "2020-08-20 21:00:47.800151"], ["password_digest", "$2a$12$IU.iSkcmTjzg.DnHiJRpwOTNxtc1obW.WAW5ncgIQyi/y2rKH4gQu"], ["id", 1]]
+  [1m[35m (100.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/recipes?page=1" for ::1 at 2020-08-21 00:30:43 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (7.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.4ms)
+  Rendered recipes/index.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 380ms (Views: 362.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:31:02 +0300
+  
+ActionController::RoutingError (uninitialized constant ChefsController):
+  
+bootsnap (1.4.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
+bootsnap (1.4.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
+bootsnap (1.4.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `rescue in load_missing_constant'
+bootsnap (1.4.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2020-08-21 00:33:57 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:39:29 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 131ms (Views: 111.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:41:09 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (30.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:42:00 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:42:33 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 00:42:36 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 00:42:47 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ChefsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2020-08-21 00:44:09 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 337ms (Views: 319.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 01:48:40 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W6lNVKmJFv5AlRE0p7fbII3fy9PTdZWGA9A3yyQ4QbmtS1O+BafJOxYB78a3bSBIqsfoLasBaLMq1X3BCCY46w==", "chef"=>{"chefname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+No template found for ChefsController#create, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-21 18:19:46 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_flash_messages.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 458ms (Views: 437.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:20:11 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (49.4ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (164.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 307ms (Views: 209.2ms | ActiveRecord: 3.7ms)
+
+
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mChef Load (0.6ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/recipes" for ::1 at 2020-08-21 18:32:29 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:32:38 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+....append=( f.submit(new_record : 'Register' ? 'Login'));@outp...
+...                              ^
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:15: syntax error, unexpected ')', expecting ':'
+..._record : 'Register' ? 'Login'));@output_buffer.safe_append='
+...                              ^
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:16: syntax error, unexpected `end', expecting ')'
+'.freeze; end ;
+          ^~~
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:18: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:20: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/chefs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/chefs/new.html.erb:15: syntax error, unexpected ')', expecting ':'
+app/views/chefs/new.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/chefs/new.html.erb:18: syntax error, unexpected `ensure', expecting ')'
+app/views/chefs/new.html.erb:20: syntax error, unexpected `end', expecting ')'
+Started GET "/register" for ::1 at 2020-08-21 18:33:00 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered chefs/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+...d=( f.submit(new_record_field : 'Register' ? 'Login'));@outp...
+...                              ^
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:15: syntax error, unexpected ')', expecting ':'
+...d_field : 'Register' ? 'Login'));@output_buffer.safe_append='
+...                              ^
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:16: syntax error, unexpected `end', expecting ')'
+'.freeze; end ;
+          ^~~
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:18: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/muzz-art/Documents/rails-essentials/MyRecipeApp/app/views/chefs/new.html.erb:20: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/chefs/new.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/chefs/new.html.erb:15: syntax error, unexpected ')', expecting ':'
+app/views/chefs/new.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/chefs/new.html.erb:18: syntax error, unexpected `ensure', expecting ')'
+app/views/chefs/new.html.erb:20: syntax error, unexpected `end', expecting ')'
+Started GET "/register" for ::1 at 2020-08-21 18:33:49 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/new.html.erb within layouts/application (208.7ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for #<#<Class:0x00007f2c20610550>:0x00007f2c201ebbc8>
+Did you mean?  new_recipe_url):
+    12:   <%= f.label 'password' %>
+    13:   <%= f.password_field :password %>
+    14: 
+    15:   <%= f.submit(new_record? ? 'Register' : 'Login')%>
+    16: <% end %>
+  
+app/views/chefs/new.html.erb:15:in `block in _app_views_chefs_new_html_erb___3486484151274213065_20100'
+app/views/chefs/new.html.erb:5:in `_app_views_chefs_new_html_erb___3486484151274213065_20100'
+Started GET "/register" for ::1 at 2020-08-21 18:34:09 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.3ms)
+  Rendered chefs/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:35:22 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:36:15 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered chefs/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:36:49 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dbYOWmLA0FddP0u4ii7j2Crft5M8Cs/eBCPwbSdzvoWwdKNvn7u+B1FB/D1QH7M2+1ixqqBVhvq0+wygZr0FBg==", "chef"=>{"chefname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+No template found for ChefsController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:36:58 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.3ms)
+  Rendered chefs/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:37:00 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeuOb9ivav/klj1V9X23B3zc+TegbF/xUX58D3W2qFXkKSNaJdQEr+joitAvTOfprVv/DjwzFtXhpoDCNHgT1g==", "chef"=>{"chefname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+No template found for ChefsController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:38:19 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered chefs/_form.html.erb (4.0ms)
+  Rendered chefs/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:46:31 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.3ms)
+  Rendered chefs/_form.html.erb (2.4ms)
+  Rendered chefs/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 53.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:46:34 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PuUd89UIDn4wJGYM5wXxuFX7BJj1IMtWZ05DILoaYVv7J7DGKHNgLjxa0Yk9NKFWhHwCoWl/gnLXlr/t+9Ta2A==", "chef"=>{"chefname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.4ms)
+  Rendered chefs/_form.html.erb (2.2ms)
+  Rendered chefs/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:48:07 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JV5of4YpskFTQulOcNwSs3ZrwbfVjSv+bUS855A2qK3gnMVKe1LcEV88Xsuq7UJdp+zHjknSYtrdnEAq0fgTLg==", "chef"=>{"chefname"=>"Salvatore", "email"=>"salvo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "salvo@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["chefname", "Salvatore"], ["email", "salvo@example.com"], ["created_at", "2020-08-21 15:48:08.243051"], ["updated_at", "2020-08-21 15:48:08.243051"], ["password_digest", "$2a$12$1XvbhF0O9kr1uQEZdEC8hOj.Pt4QRnJqsEVydc7XKWp9isko.Azs6"]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[35m (76.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 385ms (ActiveRecord: 77.2ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:48:08 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (6.2ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  Rendered recipes/index.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 75.9ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+Started GET "/chefs" for ::1 at 2020-08-21 18:50:23 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ChefsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/chefs" for ::1 at 2020-08-21 18:50:54 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PuUd89UIDn4wJGYM5wXxuFX7BJj1IMtWZ05DILoaYVv7J7DGKHNgLjxa0Yk9NKFWhHwCoWl/gnLXlr/t+9Ta2A==", "chef"=>{"chefname"=>"Houda", "email"=>"houda@example.com", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "houda@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["chefname", "Houda"], ["email", "houda@example.com"], ["created_at", "2020-08-21 15:50:54.677516"], ["updated_at", "2020-08-21 15:50:54.677516"], ["password_digest", "$2a$12$2.zm5fA7PT/tZBv02Sd7ke1hj/w5kOA6dIuMb3.n/FiXJOrSPMoMW"]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[35m (285.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 585ms (ActiveRecord: 286.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:50:54 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.5ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  Rendered recipes/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:51:33 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered chefs/_form.html.erb (3.7ms)
+  Rendered chefs/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:52:01 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RZW3pRXAJvaKNwgva8ggIAUnoiyYyuWnifsmYI/91+qAVxqQ6LtIpoZJv6qx+XDO1KCkFQSVrIM5I9qtzjNsaQ==", "chef"=>{"chefname"=>"Mohamed", "email"=>"moha@example.com", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "moha@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Create (0.2ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["chefname", "Mohamed"], ["email", "moha@example.com"], ["created_at", "2020-08-21 15:52:01.570433"], ["updated_at", "2020-08-21 15:52:01.570433"], ["password_digest", "$2a$12$aGfiwQh9FG5v5oXbJ564t.M2j6ByYx24kdwYy1FoeZ9NLPIk9LtOW"]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[35m (84.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 386ms (ActiveRecord: 84.9ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:52:01 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.0ms)
+  Rendered recipes/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:52:12 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered recipes/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/register" for ::1 at 2020-08-21 18:52:21 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (2.4ms)
+  Rendered chefs/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/chefs" for ::1 at 2020-08-21 18:52:45 +0300
+Processing by ChefsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QiV4FHVyzx4wXHgo3fXsG6OlTRVjAKLuL/vhfrahljSH59UhiAmhTjwiz60HxLz1ciJLLP9f68qfIx2z928ttw==", "chef"=>{"chefname"=>"Caleb", "email"=>"caleb@example.com", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) LIMIT ?[0m  [["email", "caleb@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[36mChef Create (0.3ms)[0m  [1m[32mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["chefname", "Caleb"], ["email", "caleb@example.com"], ["created_at", "2020-08-21 15:52:45.412301"], ["updated_at", "2020-08-21 15:52:45.412301"], ["password_digest", "$2a$12$CHykm8Oc4FuEZDsKgLnjbOYQvxQSvzfL9nzohhtf5LdoFONpp0KHm"]]
+  ↳ app/controllers/chefs_controller.rb:9
+  [1m[35m (123.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:9
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 429ms (ActiveRecord: 124.1ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-21 18:52:45 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.4ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  Rendered recipes/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+Started GET "/chefs" for ::1 at 2020-08-21 19:06:29 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:07:30 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:08:34 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:11:26 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 19:11:29 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered chefs/_form.html.erb (2.8ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:11:55 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcpRUvBXQgu2cRZQcMb/S4tgqxWvYPHFfEzTT79OTOYyZ6o8Ql1aMZAMHNyf9k53qMKE81YgVFsJxCmY2Nfq1w==", "chef"=>{"chefname"=>"oloo", "email"=>"oloo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `users_path' for #<ChefsController:0x00007f2c203f3c18>):
+  
+app/controllers/chefs_controller.rb:30:in `update'
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:12:38 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcpRUvBXQgu2cRZQcMb/S4tgqxWvYPHFfEzTT79OTOYyZ6o8Ql1aMZAMHNyf9k53qMKE81YgVFsJxCmY2Nfq1w==", "chef"=>{"chefname"=>"oloo", "email"=>"oloo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Redirected to http://localhost:3000/chefs
+Completed 302 Found in 22ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:12:38 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 19:12:40 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (3.2ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:12:42 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ttL8YlD/3FEXKmY56uCOZpYRTWP5Ej8jNbs6o1LdtZiVfwcM4vXEazFXbLUF0D9atbNihQBSmr1AM8B0NUQTqQ==", "chef"=>{"chefname"=>"oloo", "email"=>"oloo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "id"=>"1"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Redirected to http://localhost:3000/chefs
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:12:42 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+Started GET "/chefs/2/edit" for ::1 at 2020-08-21 19:13:51 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (5.0ms)
+  Rendered chefs/edit.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/chefs/2" for ::1 at 2020-08-21 19:13:57 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7x5EYy5YvOH9nK32ly/Hl/TIvnY1H2FOGCtkoNVeh+j2KhAmpDyODXBr7FvIOoZofdXF4YrQEnxf3WgFuEhqig==", "chef"=>{"chefname"=>"Salvatore", "email"=>"salvo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "id"=>"2"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "salvo@example.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Redirected to http://localhost:3000/chefs
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:13:57 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+Started GET "/chefs" for ::1 at 2020-08-21 19:16:38 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 318ms (Views: 307.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs/2/edit" for ::1 at 2020-08-21 19:16:40 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (8.1ms)
+  Rendered chefs/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/chefs/2" for ::1 at 2020-08-21 19:16:42 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cb1fb4UiSoEH6zHOJJhuHhOWFBHeAvI5PLYe+XZQbvhoiQsqD0Z4bYoccGN7jS/hmotvhmHNgQt7QBJcG0aDmg==", "chef"=>{"chefname"=>"Salvatore", "email"=>"salvo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Login", "id"=>"2"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "salvo@example.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Redirected to http://localhost:3000/chefs
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:16:42 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 19:16:44 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered chefs/_form.html.erb (2.6ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 19:18:16 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered chefs/_form.html.erb (2.5ms)
+  Rendered chefs/edit.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:18:19 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l2Juio5THlM1Eso2uCjFjh+/rQ2yg7Riqi2s6zdkwJ9SoMO/cyhwAzlsfbNiGZVgzjirNC7c/UYa9VAmdqp7HA==", "chef"=>{"chefname"=>"oloo", "email"=>"oloo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Edit Profile", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+Redirected to http://localhost:3000/chefs
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:18:19 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 19:18:23 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered chefs/_form.html.erb (3.5ms)
+  Rendered chefs/edit.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:18:36 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QBMAeAaw2vJLInFzMR5jj8VZ5sH6bAF7Rkvp8k/PKVNjvvsWtLrCyG1fe//eLtKz5vvJJwMspOUzwxMlKFaPYg==", "chef"=>{"chefname"=>"", "email"=>"oloo@example.com", "password"=>"[FILTERED]"}, "commit"=>"Edit Profile", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", "oloo@example.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.1ms)
+  Rendered chefs/_form.html.erb (2.0ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 51.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/chefs/1" for ::1 at 2020-08-21 19:18:53 +0300
+Processing by ChefsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f6kT1JIssj/4WvCnKrcRUlUxJc6sAgGSHrR4PNEjHKK6a77hb1fcb/QkRyLwhkG8hLYj9zBdSLaubITxkO2nIQ==", "chef"=>{"chefname"=>"Houda", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Edit Profile", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER(?) AND "chefs"."id" != ? LIMIT ?[0m  [["email", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chefs_controller.rb:28
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered chefs/_form.html.erb (2.2ms)
+  Rendered chefs/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 55.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:20:55 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs/3/edit" for ::1 at 2020-08-21 19:20:58 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered chefs/_form.html.erb (2.4ms)
+  Rendered chefs/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:21:04 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs/5/edit" for ::1 at 2020-08-21 19:21:07 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:22
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (2.6ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 19:21:10 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 20:05:58 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 71ms (Views: 62.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-21 20:06:00 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (205.4ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `chef' for #<#<Class:0x00007fd94c0217f0>:0x00007fd92c338b20>
+Did you mean?  @chef):
+    2: <%= @chef.chefname %>
+    3: <%= @chef.email %>
+    4: 
+    5: <%= link_to 'Update chef', edit_chef_path(chef) %>&nbsp&nbsp
+    6: <%= link_to 'Back to Chefs', chefs_path %>
+  
+app/views/chefs/show.html.erb:5:in `_app_views_chefs_show_html_erb___2965354746173516204_27660'
+Started GET "/chefs/1" for ::1 at 2020-08-21 20:06:22 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-21 20:06:57 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 20:07:06 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered chefs/_form.html.erb (4.0ms)
+  Rendered chefs/edit.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 20:07:10 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-21 20:07:12 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-21 21:46:07 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/muzz-art/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 542ms (Views: 482.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-21 21:46:10 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:26
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered chefs/_form.html.erb (113.1ms)
+  Rendered chefs/edit.html.erb within layouts/application (122.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 170.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 21:46:13 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-21 21:46:17 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  Rendered chefs/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-21 21:46:20 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
