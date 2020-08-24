@@ -1,0 +1,26 @@
+<div class = 'row'>
+  <div class = 'col-md-6 col-md-offset-3 center'>
+    <h1>Login</h1>
+  </div>
+</div>
+
+<hr>
+
+<div class = "row">
+  <div class = 'well col-md-6 col-md-offset-3 center'>
+    
+    <%= form_tag login_path do %>
+      <%= label_tag :email %>
+      <%= email_field_tag :email %>
+
+      <%= label_tag :password %>
+      <%= password_field_tag :password %>
+
+      <%= submit_tag 'Login', class: 'btn btn-success'%>
+
+        <strong><h4>OR</h4></strong>
+
+      <%= link_to 'Sign Up', register_path, class: 'btn btn-success uneditable-input' %>
+    <% end %>
+  </div>
+</div>

@@ -6,7 +6,9 @@
 
 <div class = 'row'>
   <div class = 'col-md-3 pull-right center'>
-    <h3>Recipe Prepared by: <strong><%= @recipe.chef.chefname %></strong></h3>
+    <%= link_to chef_path(@recipe.chef) do %>
+      <h3>Recipe Prepared by: <strong><%= @recipe.chef.chefname %></strong></h3>
+    <% end %>
   </div>
 
   <div class = 'col-md-9 well'>
