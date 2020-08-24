@@ -23,6 +23,8 @@
   </div>
 </div>
 
-<%= link_to 'Edit Recipe', edit_recipe_path, class: 'btn btn-warning' %>
+<% if logged_in? %>
+  <%= link_to 'Edit Recipe', edit_recipe_path, class: 'btn btn-warning' %>
+  <%= link_to 'Delete Recipe', '#', class: 'btn btn-danger'%>
+<% end %>
 <%= link_to 'All Recipes', recipes_path, class: 'btn btn-success' %>
-<%= link_to 'Delete Recipe', '#', class: 'btn btn-danger'%>

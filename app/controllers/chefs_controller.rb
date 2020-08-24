@@ -4,6 +4,7 @@ class ChefsController < ApplicationController
   end
 
   def index
+    redirect_to root_path if !logged_in?
     @chefs = Chef.all
   end
 
@@ -24,10 +25,12 @@ class ChefsController < ApplicationController
   end
 
   def edit
+    redirect_to root_path if !logged_in?
     @chef = Chef.find(params[:id])
   end
 
   def update
+    redirect_to root_path if !logged_in?
     @chef = Chef.find(params[:id])
 
     if @chef.update(chef_params)
@@ -39,6 +42,7 @@ class ChefsController < ApplicationController
   end
 
   def destroy
+    redirect_to root_path if !logged_in?
   end
 
   private

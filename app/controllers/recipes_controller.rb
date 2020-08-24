@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  def index
+  def index    
     @recipes = Recipe.paginate(page: params[:page], per_page: 3)
   end
 
@@ -8,10 +8,12 @@ class RecipesController < ApplicationController
   end
 
   def new
+    redirect_to root_path if !logged_in?
     @recipe = Recipe.new
   end
 
   def create
+    redirect_to root_path if !logged_in?
     @recipe = Recipe.new(recipe_params)
     @recipe.chef = Chef.find(1)
 
@@ -24,10 +26,12 @@ class RecipesController < ApplicationController
   end
 
   def edit
+    redirect_to root_path if !logged_in?
     @recipe = Recipe.find(params[:id])
   end
 
   def update
+    redirect_to root_path if !logged_in?
     @recipe = Recipe.find(params[:id])
 
     if @recipe.update(recipe_params)

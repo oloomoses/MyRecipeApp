@@ -11208,3 +11208,1892 @@ Processing by LoginsController#new as HTML
 Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/login" for ::1 at 2020-08-24 11:26:14 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:26:19 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 11:26:31 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-08-24 11:26:56 +0300
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/cCSxO/rwsdDjyu+e2gYRQtAo6tZkvcQU2W19JhB4RuEHPWVaoR4UFMpatzF776clIyIe7rwAFwTRRBV0uFUBw==", "email"=>"houda@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mChef Load (16.8ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."email" = ? LIMIT ?[0m  [["email", "houda@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:6
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 345ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:26:57 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (23.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (58.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.2ms)
+  Rendered recipes/index.html.erb within layouts/application (149.6ms)
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 282ms (Views: 156.0ms | ActiveRecord: 41.5ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:28:13 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (16.3ms)
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/logout" for ::1 at 2020-08-24 11:28:16 +0300
+Processing by LoginsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:28:16 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:28:25 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.2ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  Rendered recipes/index.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 11:28:28 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:28:31 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:28:40 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 11:39:00 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-08-24 11:39:18 +0300
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NpPklDYd5rUWzC+Oovao809TZtI4W1Ubx/RzK+Wi/rdPT4PFs3JcIgZqbuwccQ4q0J9NAts5oleH1NaKrwJLqw==", "email"=>"houda@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."email" = ? LIMIT ?[0m  [["email", "houda@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:6
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 288ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:39:18 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (15.2ms)
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:39:31 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:41:20 +0300
+Processing by PagesController#home as HTML
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:41:20 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (7.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  Rendered recipes/index.html.erb within layouts/application (28.8ms)
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 79.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:41:25 +0300
+Processing by PagesController#home as HTML
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:41:25 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  Rendered recipes/index.html.erb within layouts/application (19.3ms)
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:48:12 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.4ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (17.0ms)
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/logout" for ::1 at 2020-08-24 11:48:15 +0300
+Processing by LoginsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:48:15 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 11:48:21 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:48:24 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:48:27 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.3ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  Rendered recipes/index.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:55:33 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-24 11:55:43 +0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered recipes/_form.html.erb (48.5ms)
+  Rendered recipes/new.html.erb within layouts/application (54.4ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 120ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2020-08-24 11:56:12 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:27
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered recipes/_form.html.erb (7.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:56:24 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 11:56:35 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.2ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.0ms)
+  Rendered recipes/index.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 11:56:52 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.3ms)
+  Rendered recipes/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 11:57:03 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered chefs/show.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/chefs/1?page=2" for ::1 at 2020-08-24 11:57:09 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.2ms)
+  Rendered chefs/show.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 65.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/chefs/1?page=1" for ::1 at 2020-08-24 11:57:12 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  Rendered chefs/show.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 57.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/chefs/1?page=2" for ::1 at 2020-08-24 11:57:17 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.0ms)
+  Rendered chefs/show.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 11:57:18 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:11:49 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-24 12:11:59 +0300
+Processing by RecipesController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:11:59 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2020-08-24 12:12:14 +0300
+Processing by RecipesController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:12:14 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/1/like?like=true" for ::1 at 2020-08-24 12:12:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/1/like"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/recipes/1/edit" for ::1 at 2020-08-24 12:12:43 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:30
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:13:48 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (6.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered recipes/index.html.erb within layouts/application (43.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 84.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:13:50 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:11
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  Rendered chefs/show.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 59.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-24 12:14:00 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:27
+  Rendering chefs/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered chefs/_form.html.erb (2.8ms)
+  Rendered chefs/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 71ms (Views: 53.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-24 12:14:14 +0300
+Processing by ChefsController#index as HTML
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:3
+  Rendered chefs/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:14:30 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:14:33 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  Rendered recipes/index.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes?page=2" for ::1 at 2020-08-24 12:14:36 +0300
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.4ms)
+  Rendered recipes/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/1" for ::1 at 2020-08-24 12:14:39 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.4ms)
+  Rendered recipes/show.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:16:09 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:14
+Completed 302 Found in 19ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:16:09 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:16:14 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (6.3ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  Rendered recipes/index.html.erb within layouts/application (34.8ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:16:16 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:14
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:16:16 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:16:31 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (6.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.5ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  Rendered recipes/index.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:16:32 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.6ms)
+  Rendered recipes/show.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:19:34 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:14
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:19:34 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:19:55 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.9ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.8ms)
+  Rendered recipes/index.html.erb within layouts/application (41.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 92ms (Views: 81.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:19:57 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:13
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered chefs/show.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 61.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/chefs/1/edit" for ::1 at 2020-08-24 12:20:03 +0300
+Processing by ChefsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:31
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:20:03 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:20:06 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.1ms)
+  Rendered recipes/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:20:13 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:13
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.1ms)
+  Rendered chefs/show.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:20:17 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.5ms)
+  Rendered recipes/show.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 88.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chefs/1" for ::1 at 2020-08-24 12:20:25 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:13
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.6ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  Rendered chefs/show.html.erb within layouts/application (26.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 111ms (Views: 103.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/chefs/1?page=2" for ::1 at 2020-08-24 12:20:42 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:13
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.9ms)
+  Rendered chefs/show.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 57.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/chefs/1?page=1" for ::1 at 2020-08-24 12:20:44 +0300
+Processing by ChefsController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chefs_controller.rb:13
+  Rendering chefs/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."chef_id" = ?[0m  [["chef_id", 1]]
+  ↳ app/views/chefs/show.html.erb:11
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."chef_id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["chef_id", 1], ["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/chefs/show.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered chefs/show.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/chefs" for ::1 at 2020-08-24 12:20:47 +0300
+Processing by ChefsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:20:47 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:23:35 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.4ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.5ms)
+  Rendered recipes/index.html.erb within layouts/application (24.9ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:23:37 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.3ms)
+  Rendered recipes/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:23:40 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.1ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.4ms)
+  Rendered recipes/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:23:42 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.9ms)
+  Rendered recipes/show.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:23:46 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (6.3ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.6ms)
+  Rendered recipes/index.html.erb within layouts/application (28.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/recipes?page=2" for ::1 at 2020-08-24 12:23:49 +0300
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 1], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.0ms)
+  Rendered recipes/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes?page=1" for ::1 at 2020-08-24 12:23:51 +0300
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.8ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  Rendered recipes/index.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 63.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:23:53 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.7ms)
+  Rendered recipes/show.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:24:07 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.9ms)
+  Rendered recipes/index.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 78.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:24:10 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:24:52 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.2ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.5ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.2ms)
+  Rendered recipes/index.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 12:25:05 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-24 12:25:06 +0300
+Processing by ChefsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:25:06 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:26:04 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:26:06 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (2.7ms)
+  Rendered recipes/index.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/recipes/4" for ::1 at 2020-08-24 12:26:08 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? ORDER BY "recipes"."created_at" DESC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.9ms)
+  Rendered recipes/show.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:26:09 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.0ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (4.7ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (3.3ms)
+  Rendered recipes/index.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 12:26:12 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-24 12:26:14 +0300
+Processing by ChefsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-24 12:26:14 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2020-08-24 12:26:23 +0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:3
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/recipes/index.html.erb:5
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 4], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (5.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 3], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.6ms)
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 1]]
+  ↳ app/models/recipe.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."likes" = ?[0m  [["recipe_id", 2], ["likes", 0]]
+  ↳ app/models/recipe.rb:16
+  Rendered recipes/_likes.html.erb (1.5ms)
+  Rendered recipes/index.html.erb within layouts/application (35.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 76.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/login" for ::1 at 2020-08-24 12:26:26 +0300
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-24 12:26:27 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered chefs/_form.html.erb (3.7ms)
+  Rendered chefs/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2020-08-24 12:27:44 +0300
+Processing by ChefsController#new as HTML
+  Rendering chefs/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.3ms)
+  Rendered chefs/_form.html.erb (2.1ms)
+  Rendered chefs/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 48.0ms | ActiveRecord: 0.7ms)
+
+
