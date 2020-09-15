@@ -1,15 +1,18 @@
 class ChefsController < ApplicationController
+  before_action :set_chef, only: [:show, :edit, :update]
+  before_action :require_login, only: [:edit, :update, :show, :create, :destroy]
+  before_action :require_same_user, only: [:edit, :update, :delete]
+
+
   def new
     @chef = Chef.new
   end
 
   def index
-    redirect_to root_path if !logged_in?
     @chefs = Chef.all
   end
 
-  def show
-    @chef = Chef.find(params[:id])
+  def show    
     @recipe = @chef.recipes.paginate(page: params[:page], per_page: 3)
   end
 
@@ -25,13 +28,10 @@ class ChefsController < ApplicationController
   end
 
   def edit
-    redirect_to root_path if !logged_in?
-    @chef = Chef.find(params[:id])
+    
   end
 
   def update
-    redirect_to root_path if !logged_in?
-    @chef = Chef.find(params[:id])
 
     if @chef.update(chef_params)
       flash[:success] = 'User detals updated'
@@ -42,11 +42,22 @@ class ChefsController < ApplicationController
   end
 
   def destroy
-    redirect_to root_path if !logged_in?
+
   end
 
   private
     def chef_params
       params.require(:chef).permit(:chefname, :email, :password)
+    end
+
+    def set_chef
+      @chef = Chef.find(params[:id])
+    end
+
+    def require_same_user
+      if current_user != @chef
+        flash[:danger] = "You cannot perfom this action"
+        redirect_back fallback_location: :back
+      end
     end
 end

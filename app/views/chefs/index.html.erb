@@ -1,5 +1,15 @@
 <h2>All Chefs</h2>
 
+<ul class = "nav nav-tabs">
+  <li>
+    <%= link_to 'Recipe', recipes_path %>
+  </li>
+  <li class = 'active'>
+    <%= link_to 'Chefs', chefs_path %>
+  </li>
+
+</ul>
+
 <% @chefs.each do |chef| %>
   <h3><%= chef.chefname %></h3>
   <%= chef.email %><br>
